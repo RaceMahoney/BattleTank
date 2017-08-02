@@ -18,5 +18,5 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 public:
 	ATank* GetControlledTank() const;
 	
-	
+	virtual void BeginPlay() override; // override checks to find this higher in the hiercarchy (in Actor)
 };
