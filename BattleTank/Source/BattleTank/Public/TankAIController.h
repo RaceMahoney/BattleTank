@@ -16,6 +16,9 @@ class BATTLETANK_API ATankAIController : public AAIController
 	
 public:
 	virtual void BeginPlay() override; // override checks to find this higher in the hiercarchy (in Actor)
+
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 	
 
 private:
