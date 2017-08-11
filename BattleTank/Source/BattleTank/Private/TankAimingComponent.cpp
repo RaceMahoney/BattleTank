@@ -21,7 +21,7 @@ void UTankAimingComponent::SetTurretRefrence(UTankTurret* TurretToSet) {
 
 UTankAimingComponent::UTankAimingComponent() {
 //	bWantsBeginPlay = true;
-	PrimaryComponentTick.bCanEverTick = true;
+	PrimaryComponentTick.bCanEverTick = false;
 }
 
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed) {
@@ -53,14 +53,8 @@ void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed) {
 	{
 		auto AimDirection = OutLaunchVelocity.GetSafeNormal();
 		MoveBarrelTowards(AimDirection);
+	}
 
-		//auto Time = GetWorld()->GetTimeSeconds();
-		//UE_LOG(LogTemp, Warning, TEXT("%f : Aim solve found"), Time);
-	}
-	else {
-		//auto Time = GetWorld()->GetTimeSeconds();
-		//UE_LOG(LogTemp, Warning, TEXT("%f : No aim solve found"), Time);
-	}
 }
 
 
@@ -72,6 +66,7 @@ void UTankAimingComponent::MoveBarrelTowards(FVector AimDirection) {
 	auto DeltaRotator = AimAsRotator - BarrelRotator;				//the difference in rotation this frame
 	
 	Barrel->Elevate(DeltaRotator.Pitch); 
+	Turret->Rotate(DeltaRotator.Yaw);
 	
 }
 
