@@ -20,4 +20,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+private:
+	//how close the tank can get to the player
+	float AcceptenceRadius = 3000;
+
 };
