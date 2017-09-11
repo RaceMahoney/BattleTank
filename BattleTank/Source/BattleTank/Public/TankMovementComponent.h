@@ -22,7 +22,7 @@ public:
 		void IntendMoveFoward(float Throw);
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
-	void IntendTurnRight(float Throw);
+		void IntendTurnRight(float Throw);
 
 
 private:

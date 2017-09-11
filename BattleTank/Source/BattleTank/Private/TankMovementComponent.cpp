@@ -18,19 +18,17 @@ void UTankMovementComponent::RequestDirectMove(const FVector& MoveVelocity, bool
 	auto ForwardThrow = FVector::DotProduct(TankForward, AIForwardIntention);
 	IntendMoveFoward(ForwardThrow);
 	//rotate left and right
-	auto RightThrow = FVector::CrossProduct(TankForward, AIForwardIntention).Z;
+	auto RightThrow = FVector::CrossProduct(TankForward, AIForwardIntention).Z;	
 	IntendTurnRight(RightThrow);
 
 }
 
 void UTankMovementComponent::IntendMoveFoward(float Throw) {
-
 	LeftTrack ->SetThrottle(Throw);
 	RightTrack->SetThrottle(Throw);
 }
 
 void UTankMovementComponent::IntendTurnRight(float Throw) {
-
 	LeftTrack->SetThrottle(Throw);
 	RightTrack->SetThrottle(-Throw);
 }

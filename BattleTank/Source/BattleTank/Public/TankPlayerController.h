@@ -15,8 +15,6 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 	GENERATED_BODY()
 	
 public:
-	ATank* GetControlledTank() const;
-	
 	// override checks to find this higher in the hiercarchy (in Actor)
 	virtual void BeginPlay() override; 
 
@@ -24,7 +22,13 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 
+protected:
+	UFUNCTION(BlueprintCallable, Category = "Setup")
+		ATank* GetControlledTank() const;
+
 private:
+	
+	
 	//Start the tank moving the barrel so that the shot hits where the crosshair is in the world
 	void AimTowardsCrosshair();
 
