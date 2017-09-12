@@ -21,7 +21,11 @@ UTankAimingComponent::UTankAimingComponent() {
 
 void UTankAimingComponent::AimAt(FVector HitLocation, float LaunchSpeed) {
 
-	if (!Barrel) { return; }
+	if (!Barrel) 
+	{ 
+		UE_LOG(LogTemp, Warning, TEXT("no barrel found"));  
+		return; 
+	}
 
 	FVector OutLaunchVelocity;
 	FVector StartLocation = Barrel->GetSocketLocation(FName("Projectile"));
