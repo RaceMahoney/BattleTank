@@ -3,25 +3,21 @@
 #include "TankBarrel.h"
 #include "Projectile.h"
 #include "Engine/World.h"
-#include "TankMovementComponent.h"
 #include "TankAimingComponent.h"
-
-
-
 
 // Sets default values
 ATank::ATank()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = false;
-	UE_LOG(LogTemp, Warning, TEXT("DONKEY: TANK C++ Construct"))
 }
 
 // Called when the game starts or when spawned
 void ATank::BeginPlay()
 {
 	Super::BeginPlay();	// Needed for BP Begin play to run
-	UE_LOG(LogTemp, Warning, TEXT("DONKEY: TANK C++ Begin Play"))
+		TankAimingComponent = FindComponentByClass<UTankAimingComponent>();
+		UE_LOG(LogTemp, Warning, TEXT("Im here"));
 }
 
 
