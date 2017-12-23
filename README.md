@@ -8,9 +8,12 @@ This project has been developed in Unreal Engine 4.16 and will work on any later
 1. Create new Unreal project in 4.16 or graeter.
 2. Clone repository to local system.
 3. Import all content from repository to newly created Unreal project.
-4. Open 
+4. Open **Battlegorund** map to see main game
 
 
-## Gameplay
-Control a tank from a third person perspective. Rotate and aim the turret to fire at other AI or player controller tanks in the world. Avoid getting hit with stratgeic movements using a fly by wire system using the keyboard.
+## Usage
+
+..* Control a tank from a third person perspective. 
+..* Rotate and aim the turret to fire at other AI or player controller tanks in the world. 
+..* Avoid getting hit with stratgeic movements using a fly by wire system using the keyboard.
 
