@@ -13,7 +13,7 @@ This project has been developed in Unreal Engine 4.16 and will work on any later
 
 ## Usage
 
-..* Control a tank from a third person perspective. 
-..* Rotate and aim the turret to fire at other AI or player controller tanks in the world. 
-..* Avoid getting hit with stratgeic movements using a fly by wire system using the keyboard.
+* Control a tank from a third person perspective. 
+* Rotate and aim the turret to fire at other AI or player controller tanks in the world. 
+* Avoid getting hit with stratgeic movements using a fly by wire system using the keyboard.
 
