@@ -1,6 +1,6 @@
 # BattleTank
 An open world head to head tank fight with simple AI, terrain, and advanced control systems in Unreal 4
-Made by following the Unreal Programming course on udemy.com
+Made by following the Unreal Programming course on [Udemy.com](udemy.com).
 
 ## Installation
 This project has been developed in Unreal Engine 4.16 and will work on any later version build.
