@@ -2,8 +2,13 @@
 An open world head to head tank fight with simple AI, terrain, and advanced control systems in Unreal 4
 Made by following the Unreal Programming course on udemy.com
 
-## Build
-This project has been developed in Unreal Engine 4.16
+## Installation
+This project has been developed in Unreal Engine 4.16 and will work on any later version build.
+
+1. Create new Unreal project in 4.16 or graeter.
+2. Clone repository to local system.
+3. Import all content from repository to newly created Unreal project.
+4. Open 
 
 
 ## Gameplay
