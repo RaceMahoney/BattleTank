@@ -15,7 +15,11 @@ This project has been developed in Unreal Engine 4.16 and will work on any later
 
 * Control a tank from a third person perspective. 
 * Rotate and aim the turret to fire at other AI or player controller tanks in the world. 
-* Avoid getting hit with stratgeic movements using a fly by wire system using the keyboard.
+* Avoid getting hit with strategic movements using a fly by wire system using the keyboard.
 
 ## Gameplay
 ![alt text](https://github.com/RaceMahoney/BattleTank/blob/master/tank_screenshot.PNG)
+
+* The game consists of a 3rd person view of a tank that is controlled with the WASD keys, the mouse to aim and right click to fire a projectile.
+
+* The two enemy tanks have the same aiming and projectile system. They move towards you but always stay a certain disatnce away. 
