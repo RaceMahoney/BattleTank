@@ -17,3 +17,5 @@ This project has been developed in Unreal Engine 4.16 and will work on any later
 * Rotate and aim the turret to fire at other AI or player controller tanks in the world. 
 * Avoid getting hit with stratgeic movements using a fly by wire system using the keyboard.
 
+## Gameplay
+![alt text](https://github.com/RaceMahoney/BattleTank/blob/master/tank_screenshot.PNG)
